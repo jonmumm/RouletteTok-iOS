@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B829279D14EDA85200FA73E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B829279C14EDA85100FA73E6 /* UIKit.framework */; };
+		B829279F14EDA85200FA73E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B829279E14EDA85200FA73E6 /* Foundation.framework */; };
+		B82927A114EDA85200FA73E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82927A014EDA85200FA73E6 /* CoreGraphics.framework */; };
+		B82927A714EDA85200FA73E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B82927A514EDA85200FA73E6 /* InfoPlist.strings */; };
+		B82927A914EDA85200FA73E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B82927A814EDA85200FA73E6 /* main.m */; };
+		B82927AD14EDA85200FA73E6 /* RouletteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B82927AC14EDA85200FA73E6 /* RouletteAppDelegate.m */; };
+		B82927B014EDA85200FA73E6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82927AE14EDA85200FA73E6 /* MainStoryboard.storyboard */; };
+		B82927B314EDA85200FA73E6 /* RouletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82927B214EDA85200FA73E6 /* RouletteViewController.m */; };
+		B82927D114EDABB700FA73E6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82927D014EDABB700FA73E6 /* CoreData.framework */; };
+		B82927D914EDABDF00FA73E6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B82927D814EDABDF00FA73E6 /* libxml2.dylib */; };
+		B82927F014EDC3F100FA73E6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B82927EF14EDC3F000FA73E6 /* libicucore.dylib */; };
+		B829283114EDCD5100FA73E6 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = B829282A14EDCD5100FA73E6 /* base64.c */; };
+		B829283214EDCD5100FA73E6 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B829282D14EDCD5100FA73E6 /* NSData+SRB64Additions.m */; };
+		B829283314EDCD5100FA73E6 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B829283014EDCD5100FA73E6 /* SRWebSocket.m */; };
+		B89D1BDB14F063DF00A32BF1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9914EF072200F0D6A0 /* OpenGLES.framework */; };
+		B89D84CB14F43E61007AB18B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89D84CA14F43E61007AB18B /* CoreTelephony.framework */; };
+		B8D079A9151967DF000F24A3 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D079A8151967DF000F24A3 /* Opentok.framework */; };
+		B8E10C8E14EF03A400F0D6A0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C8D14EF03A400F0D6A0 /* CFNetwork.framework */; };
+		B8E10C9014EF044C00F0D6A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C8F14EF044C00F0D6A0 /* SystemConfiguration.framework */; };
+		B8E10C9214EF045500F0D6A0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9114EF045500F0D6A0 /* MobileCoreServices.framework */; };
+		B8E10C9414EF059E00F0D6A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9314EF059E00F0D6A0 /* Security.framework */; };
+		B8E10C9614EF062200F0D6A0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9514EF062200F0D6A0 /* CoreMedia.framework */; };
+		B8E10C9814EF063300F0D6A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9714EF063300F0D6A0 /* AudioToolbox.framework */; };
+		B8E10C9C14EF072800F0D6A0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9B14EF072800F0D6A0 /* CoreAudio.framework */; };
+		B8E10C9E14EF072F00F0D6A0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9D14EF072F00F0D6A0 /* CoreVideo.framework */; };
+		B8E10CA014EF077B00F0D6A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10C9F14EF077B00F0D6A0 /* AVFoundation.framework */; };
+		B8E10CA214EF079000F0D6A0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10CA114EF078F00F0D6A0 /* libz.dylib */; };
+		B8E10CA414EF079500F0D6A0 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10CA314EF079500F0D6A0 /* libstdc++.dylib */; };
+		B8E10CA614EF07A200F0D6A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E10CA514EF07A200F0D6A0 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B829279814EDA85100FA73E6 /* RouletteTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouletteTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B829279C14EDA85100FA73E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B829279E14EDA85200FA73E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B82927A014EDA85200FA73E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B82927A414EDA85200FA73E6 /* RouletteTok-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RouletteTok-Info.plist"; sourceTree = "<group>"; };
+		B82927A614EDA85200FA73E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B82927A814EDA85200FA73E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B82927AA14EDA85200FA73E6 /* RouletteTok-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouletteTok-Prefix.pch"; sourceTree = "<group>"; };
+		B82927AB14EDA85200FA73E6 /* RouletteAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouletteAppDelegate.h; sourceTree = "<group>"; };
+		B82927AC14EDA85200FA73E6 /* RouletteAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouletteAppDelegate.m; sourceTree = "<group>"; };
+		B82927AF14EDA85200FA73E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B82927B114EDA85200FA73E6 /* RouletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouletteViewController.h; sourceTree = "<group>"; };
+		B82927B214EDA85200FA73E6 /* RouletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouletteViewController.m; sourceTree = "<group>"; };
+		B82927D014EDABB700FA73E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B82927D814EDABDF00FA73E6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B82927EF14EDC3F000FA73E6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B829282A14EDCD5100FA73E6 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		B829282B14EDCD5100FA73E6 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		B829282C14EDCD5100FA73E6 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		B829282D14EDCD5100FA73E6 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		B829282E14EDCD5100FA73E6 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		B829282F14EDCD5100FA73E6 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		B829283014EDCD5100FA73E6 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		B89D84CA14F43E61007AB18B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B8D079A8151967DF000F24A3 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
+		B8E10C8D14EF03A400F0D6A0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B8E10C8F14EF044C00F0D6A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B8E10C9114EF045500F0D6A0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B8E10C9314EF059E00F0D6A0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B8E10C9514EF062200F0D6A0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B8E10C9714EF063300F0D6A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B8E10C9914EF072200F0D6A0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B8E10C9B14EF072800F0D6A0 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B8E10C9D14EF072F00F0D6A0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B8E10C9F14EF077B00F0D6A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B8E10CA114EF078F00F0D6A0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B8E10CA314EF079500F0D6A0 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		B8E10CA514EF07A200F0D6A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B829279514EDA85100FA73E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89D84CB14F43E61007AB18B /* CoreTelephony.framework in Frameworks */,
+				B89D1BDB14F063DF00A32BF1 /* OpenGLES.framework in Frameworks */,
+				B8E10CA014EF077B00F0D6A0 /* AVFoundation.framework in Frameworks */,
+				B8E10CA614EF07A200F0D6A0 /* QuartzCore.framework in Frameworks */,
+				B8E10CA414EF079500F0D6A0 /* libstdc++.dylib in Frameworks */,
+				B8E10CA214EF079000F0D6A0 /* libz.dylib in Frameworks */,
+				B8E10C9E14EF072F00F0D6A0 /* CoreVideo.framework in Frameworks */,
+				B8E10C9C14EF072800F0D6A0 /* CoreAudio.framework in Frameworks */,
+				B8E10C9814EF063300F0D6A0 /* AudioToolbox.framework in Frameworks */,
+				B8E10C9614EF062200F0D6A0 /* CoreMedia.framework in Frameworks */,
+				B8E10C9414EF059E00F0D6A0 /* Security.framework in Frameworks */,
+				B8E10C9214EF045500F0D6A0 /* MobileCoreServices.framework in Frameworks */,
+				B8E10C9014EF044C00F0D6A0 /* SystemConfiguration.framework in Frameworks */,
+				B8E10C8E14EF03A400F0D6A0 /* CFNetwork.framework in Frameworks */,
+				B82927F014EDC3F100FA73E6 /* libicucore.dylib in Frameworks */,
+				B82927D914EDABDF00FA73E6 /* libxml2.dylib in Frameworks */,
+				B82927D114EDABB700FA73E6 /* CoreData.framework in Frameworks */,
+				B829279D14EDA85200FA73E6 /* UIKit.framework in Frameworks */,
+				B829279F14EDA85200FA73E6 /* Foundation.framework in Frameworks */,
+				B82927A114EDA85200FA73E6 /* CoreGraphics.framework in Frameworks */,
+				B8D079A9151967DF000F24A3 /* Opentok.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B829278D14EDA85100FA73E6 = {
+			isa = PBXGroup;
+			children = (
+				B829281F14EDCC9D00FA73E6 /* Vendor */,
+				B82927A214EDA85200FA73E6 /* RouletteTok */,
+				B829279B14EDA85100FA73E6 /* Frameworks */,
+				B829279914EDA85100FA73E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B829279914EDA85100FA73E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B829279814EDA85100FA73E6 /* RouletteTok.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B829279B14EDA85100FA73E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8D079A8151967DF000F24A3 /* Opentok.framework */,
+				B8E10C9F14EF077B00F0D6A0 /* AVFoundation.framework */,
+				B8E10CA514EF07A200F0D6A0 /* QuartzCore.framework */,
+				B8E10CA314EF079500F0D6A0 /* libstdc++.dylib */,
+				B89D84CA14F43E61007AB18B /* CoreTelephony.framework */,
+				B8E10CA114EF078F00F0D6A0 /* libz.dylib */,
+				B8E10C9D14EF072F00F0D6A0 /* CoreVideo.framework */,
+				B8E10C9B14EF072800F0D6A0 /* CoreAudio.framework */,
+				B8E10C9914EF072200F0D6A0 /* OpenGLES.framework */,
+				B8E10C9714EF063300F0D6A0 /* AudioToolbox.framework */,
+				B8E10C9514EF062200F0D6A0 /* CoreMedia.framework */,
+				B8E10C9314EF059E00F0D6A0 /* Security.framework */,
+				B8E10C9114EF045500F0D6A0 /* MobileCoreServices.framework */,
+				B8E10C8F14EF044C00F0D6A0 /* SystemConfiguration.framework */,
+				B8E10C8D14EF03A400F0D6A0 /* CFNetwork.framework */,
+				B82927EF14EDC3F000FA73E6 /* libicucore.dylib */,
+				B82927D814EDABDF00FA73E6 /* libxml2.dylib */,
+				B82927D014EDABB700FA73E6 /* CoreData.framework */,
+				B829279C14EDA85100FA73E6 /* UIKit.framework */,
+				B829279E14EDA85200FA73E6 /* Foundation.framework */,
+				B82927A014EDA85200FA73E6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B82927A214EDA85200FA73E6 /* RouletteTok */ = {
+			isa = PBXGroup;
+			children = (
+				B82927AB14EDA85200FA73E6 /* RouletteAppDelegate.h */,
+				B82927AC14EDA85200FA73E6 /* RouletteAppDelegate.m */,
+				B82927AE14EDA85200FA73E6 /* MainStoryboard.storyboard */,
+				B82927B114EDA85200FA73E6 /* RouletteViewController.h */,
+				B82927B214EDA85200FA73E6 /* RouletteViewController.m */,
+				B82927A314EDA85200FA73E6 /* Supporting Files */,
+			);
+			path = RouletteTok;
+			sourceTree = "<group>";
+		};
+		B82927A314EDA85200FA73E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B82927A414EDA85200FA73E6 /* RouletteTok-Info.plist */,
+				B82927A514EDA85200FA73E6 /* InfoPlist.strings */,
+				B82927A814EDA85200FA73E6 /* main.m */,
+				B82927AA14EDA85200FA73E6 /* RouletteTok-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B829281F14EDCC9D00FA73E6 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B829282A14EDCD5100FA73E6 /* base64.c */,
+				B829282B14EDCD5100FA73E6 /* base64.h */,
+				B829282C14EDCD5100FA73E6 /* NSData+SRB64Additions.h */,
+				B829282D14EDCD5100FA73E6 /* NSData+SRB64Additions.m */,
+				B829282E14EDCD5100FA73E6 /* SocketRocket-Prefix.pch */,
+				B829282F14EDCD5100FA73E6 /* SRWebSocket.h */,
+				B829283014EDCD5100FA73E6 /* SRWebSocket.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B829279714EDA85100FA73E6 /* RouletteTok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B82927B614EDA85200FA73E6 /* Build configuration list for PBXNativeTarget "RouletteTok" */;
+			buildPhases = (
+				B829279414EDA85100FA73E6 /* Sources */,
+				B829279514EDA85100FA73E6 /* Frameworks */,
+				B829279614EDA85100FA73E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RouletteTok;
+			productName = RouletteTok;
+			productReference = B829279814EDA85100FA73E6 /* RouletteTok.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B829278F14EDA85100FA73E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B829279214EDA85100FA73E6 /* Build configuration list for PBXProject "RouletteTok" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B829278D14EDA85100FA73E6;
+			productRefGroup = B829279914EDA85100FA73E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B829279714EDA85100FA73E6 /* RouletteTok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B829279614EDA85100FA73E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82927A714EDA85200FA73E6 /* InfoPlist.strings in Resources */,
+				B82927B014EDA85200FA73E6 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B829279414EDA85100FA73E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82927A914EDA85200FA73E6 /* main.m in Sources */,
+				B82927AD14EDA85200FA73E6 /* RouletteAppDelegate.m in Sources */,
+				B82927B314EDA85200FA73E6 /* RouletteViewController.m in Sources */,
+				B829283114EDCD5100FA73E6 /* base64.c in Sources */,
+				B829283214EDCD5100FA73E6 /* NSData+SRB64Additions.m in Sources */,
+				B829283314EDCD5100FA73E6 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B82927A514EDA85200FA73E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B82927A614EDA85200FA73E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B82927AE14EDA85200FA73E6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B82927AF14EDA85200FA73E6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B82927B414EDA85200FA73E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B82927B514EDA85200FA73E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B82927B714EDA85200FA73E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RouletteTok/RouletteTok-Prefix.pch";
+				INFOPLIST_FILE = "RouletteTok/RouletteTok-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B82927B814EDA85200FA73E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RouletteTok/RouletteTok-Prefix.pch";
+				INFOPLIST_FILE = "RouletteTok/RouletteTok-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B829279214EDA85100FA73E6 /* Build configuration list for PBXProject "RouletteTok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82927B414EDA85200FA73E6 /* Debug */,
+				B82927B514EDA85200FA73E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B82927B614EDA85200FA73E6 /* Build configuration list for PBXNativeTarget "RouletteTok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82927B714EDA85200FA73E6 /* Debug */,
+				B82927B814EDA85200FA73E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B829278F14EDA85100FA73E6 /* Project object */;
+}
